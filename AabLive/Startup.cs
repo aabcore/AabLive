@@ -31,6 +31,7 @@ namespace AabLive
                 .AddCheck<WorkerHealthCheck>("service_health_check");
 
             services.AddHostedService<AabHrService>();
+            services.AddHostedService<AabTellerService>();
 
         }
 
